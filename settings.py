@@ -41,8 +41,8 @@ HALF_TEXTURE_HEIGHT = TEXTURE_HEIGHT // 2
 TEXTURE_SCALE = TEXTURE_WIDTH // TILE
 
 # player settings
-player_pos = (100, 100)
-player_angle = 0
+player_pos = (2400 - 100, 1600 // 2 + 50)
+player_angle = math.pi
 player_speed = 2
 
 # colors

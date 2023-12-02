@@ -15,9 +15,9 @@ clock = pygame.time.Clock()
 player = Player(sprites)
 drawing = Drawing(sc, sc_map)
 
-pygame.mixer.init()
-pygame.mixer.music.load('sound/BM.ogg')
-pygame.mixer.music.play(-1)
+# pygame.mixer.init()
+# pygame.mixer.music.load('sound/BM.ogg')
+# pygame.mixer.music.play(-1)
 
 while True:
     for event in pygame.event.get():
