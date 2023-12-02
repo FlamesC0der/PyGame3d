@@ -25,7 +25,7 @@ NUM_RAYS = 300
 MAX_DEPTH = 800
 DELTA_ANGLE = FOV / NUM_RAYS
 DIST = NUM_RAYS / (2 * math.tan(HALF_FOV))
-PROJ_COEFF = 3 * DIST * TILE
+PROJ_COEFF = 4 * DIST * TILE
 SCALE = WIDTH // NUM_RAYS
 
 # sprite settings
@@ -46,7 +46,7 @@ player_angle = 0
 player_speed = 2
 
 # colors
-WHITE = (255, 255, 255)
+WHITE = (181, 180, 174)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 80, 0)

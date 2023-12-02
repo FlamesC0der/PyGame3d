@@ -6,56 +6,13 @@ from collections import deque
 class Sprites:
     def __init__(self):
         self.sprite_parameters = {
-            'sprite_barrel': {
-                'sprite': pygame.image.load('sprites/barrel/base/0.png').convert_alpha(),
-                'viewing_angles': None,
-                'shift': 1.8,
-                'scale': 0.4,
-                'animation': deque(
-                    [pygame.image.load(f'sprites/barrel/anim/{i}.png').convert_alpha() for i in range(12)]),
-                'animation_dist': 800,
-                'animation_speed': 10,
-                'blocked': True
-            },
-            'sprite_pin': {
-                'sprite': pygame.image.load('sprites/pin/base/0.png').convert_alpha(),
-                'viewing_angles': None,
-                'shift': 0.6,
-                'scale': 0.6,
-                'animation': deque([pygame.image.load(f'sprites/pin/anim/{i}.png').convert_alpha() for i in range(8)]),
-                'animation_dist': 800,
-                'animation_speed': 10,
-                'blocked': True,
-            },
-            'sprite_devil': {
-                'sprite': [pygame.image.load(f'sprites/devil/base/{i}.png').convert_alpha() for i in range(8)],
-                'viewing_angles': True,
-                'shift': -0.2,
-                'scale': 1.1,
-                'animation': deque(
-                    [pygame.image.load(f'sprites/devil/anim/{i}.png').convert_alpha() for i in range(9)]),
-                'animation_dist': 150,
-                'animation_speed': 10,
-                'blocked': True,
-            },
-            'sprite_flame': {
-                'sprite': pygame.image.load('sprites/flame/base/0.png').convert_alpha(),
-                'viewing_angles': None,
-                'shift': 0.7,
-                'scale': 0.6,
-                'animation': deque(
-                    [pygame.image.load(f'sprites/flame/anim/{i}.png').convert_alpha() for i in range(16)]),
-                'animation_dist': 800,
-                'animation_speed': 5,
-                'blocked': None,
-            },
             'sprite_baldi': {
                 'sprite': pygame.image.load('sprites/baldi/base/0.png').convert_alpha(),
                 'viewing_angles': None,
-                'shift': 1.8,
-                'scale': 0.4,
+                'shift': 0.4,
+                'scale': 0.8,
                 'animation': deque(
-                    [pygame.image.load(f'sprites/baldi/anim/{i}.png').convert_alpha() for i in range(5)]),
+                    [pygame.image.load(f'sprites/baldi/anim/{i}.png').convert_alpha() for i in range(1)]),
                 'animation_dist': 800,
                 'animation_speed': 10,
                 'blocked': True
@@ -63,11 +20,6 @@ class Sprites:
         }
 
         self.list_of_objects = [
-            SpriteObject(self.sprite_parameters['sprite_barrel'], (7.1, 2.1)),
-            SpriteObject(self.sprite_parameters['sprite_barrel'], (5.9, 2.1)),
-            SpriteObject(self.sprite_parameters['sprite_pin'], (8.7, 2.5)),
-            SpriteObject(self.sprite_parameters['sprite_devil'], (7, 4)),
-            SpriteObject(self.sprite_parameters['sprite_flame'], (8.6, 5.6)),
             SpriteObject(self.sprite_parameters['sprite_baldi'], (8.6, 5.6))
         ]
 
